@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: rgb(122, 191, 214);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Lemonada', cursive;
   color: #2a2a2a;
 }
 
@@ -57,7 +57,7 @@ header {
 }
 
 body > * {
-  background-color: red;
+  background-color: lightblue;
   padding: 1%;
 }
 
@@ -121,11 +121,13 @@ aside {
   flex: 1;
   margin-left: 10px;
   padding: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 aside a {
-  display: block;
-  float: left;
+  display: flex;
   width: 50%;
 }
 
