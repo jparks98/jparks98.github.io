@@ -68,16 +68,15 @@ h1, h2 {
 @media screen and (max-width:1000px){
   .content{
     display: flex;
-    align-content: center;
-    justify-content: center;
+    margin: 0 auto;
     flex-flow: column wrap;
   }
   .pic{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    
-  }
+    align-items: center;
+      }
   .pic img{
     display: flex;
     flex: 1;
@@ -85,6 +84,7 @@ h1, h2 {
   .caption{
     display: flex;
     margin-left: 10px;
-    flex: 2
+    flex: 1;
+    flex-basis: ;
   }
 }
