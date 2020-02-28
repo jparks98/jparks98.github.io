@@ -1,5 +1,66 @@
-header {
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: row wrap;
+body {
+margin: 0;
+background-color: rgba(255, 242, 206, 0.849);
+}
+.header {
+  display: flex;
+  background-color: #1036B3;
+  color: #FFE59E;
+  margin: auto;
+  margin-bottom: 15px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-family: 'Lobster Two';
+    }
+
+.header img {
+        display: flex;
+        margin-left: auto;
+        height:125px ;
       }
+
+.content{
+  display: flex;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: wrap;
+  justify-content: space-around;
+  font-family: 'Open Sans';
+}
+.wrapper{
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-flow: column wrap;
+}
+
+.pic{
+  flex: 1;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+.pic img{
+  max-width: 100%;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.caption{
+  display: flex;
+  background-color: #B8C8FF;
+}
+.roles{
+display: flex;
+flex: 2;
+flex-flow:column wrap;
+background-color: #B8C8FF;
+}
+h1, h2 {
+  font-family: 'Lobster Two';
+}
+.descriptions{
+  font-style: italic;
+}
