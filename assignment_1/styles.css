@@ -75,18 +75,16 @@ h1, h2 {
   .pic{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin-bottom: 10px;
-    flex-wrap: nowrap;
-    text-align: center;
+    
   }
   .pic img{
-    flex: 2;
+    display: flex;
+    flex: 1;
   }
   .caption{
     display: flex;
-    flex-direction: row;
     margin-left: 10px;
-    flex: 1;
+    flex: 2
   }
 }
