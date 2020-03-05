@@ -26,8 +26,34 @@
     </div>
     <script>
       function clickMe() {
+        const header = document.querySelector(".header")
+      header.innerHTML = "Joshua Parks' Lab 4";
+
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
+
+        let paragraph1 = document.createElement("p");
+        let paragraph2 = document.createElement("p");
+
+        content.appendChild(paragraph1);
+        content.appendChild(paragraph2);
+        
+        let name="JoshuaParks";
+
+        let nameLength = name.length;
+        paragraph1.innerHTML = "My name is "+ nameLength+" letters long";
+
+        let nameChar = name.substring(2,3);
+        paragraph2.innerHTML = "The third character in my name is " + nameChar.toUpperCase();
+        
+        newline = document.createElement("br");
+        let nameEnding = name.substring(8,11);
+        paragraph2.append(newline, nameEnding);
+
+        let firstName = name.substring(0,6)
+        let lastName = name.substring(6, 11)
+        newName_length = firstName.length+lastName.length
+        header.prepend(newName_length + " ")
       }
     </script>
   </body>
