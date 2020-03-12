@@ -10,7 +10,7 @@
   <div class="container">
     <div class="wrapper">
       <div class="header">Test JSON page</div>
-      <button class="activate">Click me to replace list
+      <button class="activate" onclick="clickMe()">Click me to replace list
         entries</button>
       <div class="content">
       </div>
@@ -18,12 +18,18 @@
     </div>
   </div>
   <script>
-     const header = document.querySelector(".header")
-      header.innerHTML = "Joshua Parks' List of Countries"
+    const header = document.querySelector(".header")
+    header.innerHTML = "Joshua Parks' List of Countries"
 
-      let orderedlist = document.createElement("ol")
-      content.appendchild(orderedlist)
+    let orderedlist = document.createElement("ol")
+    let content = document.querySelector('.content')
+    content.append(orderedlist)
+    let listitem = document.createElement("li")
+    orderedlist.append(listitem)
 
+    orderedlist.classList.add("countries")
+
+    
     /* N.B. - For your lab, use the variable "countries" now available on the window space */
     const countries = [
       { "name": "Afghanistan", "code": "AF" },
@@ -270,6 +276,15 @@
       { "name": "Zambia", "code": "ZM" },
       { "name": "Zimbabwe", "code": "ZW" }
     ]
+    function clickMe(){
+      let countrylist =[]
+      
+      for (let counter = 0; counter<25; counter++){
+        var countryItem = countries[Math.floor(Math.random()*countries.length)]
+        countrylist.push(countryItem)
+        console.log(countrylist)
+      }
+    }
     console.log("List of countries in the world", countries);
   </script>
 </body>
