@@ -24,9 +24,6 @@
     let orderedlist = document.createElement("ol")
     let content = document.querySelector('.content')
     content.append(orderedlist)
-    let listitem = document.createElement("li")
-    orderedlist.append(listitem)
-
     orderedlist.classList.add("countries")
 
     
@@ -284,6 +281,13 @@
         countrylist.push(countryItem)
         console.log(countrylist)
       }
+
+        countrylist.forEach(function (country) {
+        let listitem = document.createElement("li")
+        orderedlist.appendChild(listitem);
+			  listitem.innerHTML += '<b>' + country.code + '</b>'+ ' ' + country.name
+      })
+
     }
     console.log("List of countries in the world", countries);
   </script>
